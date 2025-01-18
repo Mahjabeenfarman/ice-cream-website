@@ -1,0 +1,264 @@
+/* Basic styles */
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF5E1; /* Vanilla Cream */
+    color: #333;
+}
+
+/* Container for overall page layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #FF9A8B; /* Peachy Orange */
+    padding: 20px 0;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #A3D9A5; /* Mint Green for hover effect */
+}
+
+/* Hero section */
+.hero {
+    background-image: url('ice-cream-hero.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    background-color: #A3D9A5; /* Mint Green */
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+/* Flavors section */
+.flavors {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.flavors h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #8B4513; /* Chocolate Brown for headings */
+}
+
+.flavor-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.flavor-card {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #FAD0C4; /* Soft Pink */
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.flavor-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.flavor-card h3 {
+    font-size: 1.8em;
+    margin-top: 15px;
+    color: #1D3557; /* Dark Blue */
+}
+
+.flavor-card p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #F4F4F4;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1D3557; /* Dark Blue */
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #FF9A8B; /* Peachy Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FF6347; /* Slightly darker Peachy Orange */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+    }
+
+    .flavor-card {
+        width: 45%;
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .flavor-card {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .flavors h2 {
+        font-size: 2em;
+    }
+
+    .flavor-card {
+        width: 100%;
+    }
+
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    form {
+        width: 100%;
+    }
+}
